@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Digital Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Desa Digital Public Service Dashboard</h1>
+        <p>Integrated Government Services for Your Village</p>
+    </header>
+    
+    <nav>
+        <button id="home-btn">Home</button>
+        <button id="services-btn">Services</button>
+        <button id="info-btn">Public Info</button>
+    </nav>
+    
+    <main id="content">
+        <section id="home-section">
+            <h2>Welcome to Desa Digital</h2>
+            <p>Access various public services easily from this dashboard.</p>
+        </section>
+        
+        <section id="services-section" style="display: none;">
+            <h2>Available Services</h2>
+            <div id="services-list"></div>
+            <form id="request-form" style="display: none;">
+                <h3>Submit Request</h3>
+                <label for="service-select">Service:</label>
+                <select id="service-select" required></select><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+                <label for="details">Details:</label>
+                <textarea id="details" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section id="info-section" style="display: none;">
+            <h2>Public Information</h2>
+            <p>Latest announcements: Village meeting on October 30th. Stay updated!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Desa Digital. Powered by Golang & JS.</p>
+    </footer>
+    
+    <script src="/static/app.js"></script>
+</body>
+</html>
